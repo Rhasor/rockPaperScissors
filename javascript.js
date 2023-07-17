@@ -2,10 +2,11 @@
 const rockButton = document.getElementById("rock");
 const paperButton = document.getElementById("paper");
 const scissorsButton = document.getElementById("scissors");
+
 const playerScoreDisplay = document.getElementById("playerScore");
 const computerScoreDisplay = document.getElementById("computerScore");
 const tieScoreDisplay = document.getElementById("tieScore");
-const resultDisplay = document.getElementById("result");
+const resultDisplay = document.getElementById("result1");
 
 // Initialize the scores
 let playerScore = 0;
@@ -21,6 +22,7 @@ function computerPlay() {
 
 // Define the function to play one round of the game
 function playRound(playerSelection, computerSelection) {
+
   if (playerSelection === computerSelection) {
     resultDisplay.textContent = "Tie!";
     tieScore++;
